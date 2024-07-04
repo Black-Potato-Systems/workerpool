@@ -1,2 +1,2 @@
 # workerpool
-WrokerPool Implementation in GOlang
+WrokerPool Implementation in Golang

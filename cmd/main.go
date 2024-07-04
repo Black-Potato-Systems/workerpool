@@ -16,6 +16,12 @@ func main() {
 
 	// file should initialize interface and its services
 
+
+	// Always On application...... infinite for loop 
+	// use of select and context 
+
+	// Define the pipeline ..... in a confg file ....
+
 	flag.Set("logtostderr", "1")
 	flag.Parse()
 
@@ -32,6 +38,7 @@ func main() {
 	friesDataFrame := fries.Read("reading local file....")
 	// convert csv data into tabular form
 	// this process should take a function as a parameter and then... run that function in worker pool
+	// Every Process mustleave footprint and should be a part of DAG
 	friesDataFrame.Process().Process().Process().LongRunningProces(2)
 
 	// internally Read rea the file ..parallely and further combine the chunks
